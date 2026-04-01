@@ -13,7 +13,7 @@ export default function Home() {
         const loggedIn = localStorage.getItem('isLoggedIn');
 
         if (!loggedIn) {
-            router.push('/unguided/auth/not-authorized');
+            router.push('/auth/not-authorized');
         } else {
             setIsAuthenticated(true);
             setIsLoading(false);
@@ -22,7 +22,7 @@ export default function Home() {
 
     const handleLogout = () => {
         localStorage.removeItem('isLoggedIn');
-        router.push('/unguided/auth/login');
+        router.push('/auth/login');
     };
 
     if (isLoading) {
