@@ -68,7 +68,9 @@ const RegisterPage = () => {
     }
 
     toast.success('Register Berhasil!', { theme: 'dark', position: 'top-right' });
-    router.push('/unguided/auth/login');
+    
+    // Diubah agar kembali ke login utama
+    router.push('/auth/login');
   };
 
   return (
@@ -242,7 +244,7 @@ const RegisterPage = () => {
       </form>
 
       <p className="mt-6 text-center text-sm text-gray-600">
-        Sudah punya akun? <Link href="/unguided/auth/login" className="text-blue-600 hover:text-blue-800 font-semibold">Login</Link>
+        Sudah punya akun? <Link href="/auth/login" className="text-blue-600 hover:text-blue-800 font-semibold">Login</Link>
       </p>
     </AuthFormWrapper>
   );

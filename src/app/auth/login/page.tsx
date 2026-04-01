@@ -264,5 +264,5 @@ const LoginPage = () => {
     </AuthFromWrapper>
   );
 };
-//
+
 export default LoginPage;
