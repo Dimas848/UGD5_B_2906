@@ -101,7 +101,6 @@ const LoginPage = () => {
 
     if (!isValid) {
       setErrors(newErrors);
-      
       const newAttempts = Math.max(0, attempts - 1);
       setAttempts(newAttempts);
 
@@ -119,7 +118,7 @@ const LoginPage = () => {
       localStorage.setItem('isLoggedIn', 'true');
     }
     
-    router.push('/unguided/home');
+    router.push('/home');
   };
 
   return (
@@ -190,7 +189,7 @@ const LoginPage = () => {
               />
               Ingat Saya
             </label>
-            <Link href="/unguided/auth/forgot-password" className="text-blue-600 hover:text-blue-800 text-sm font-semibold pointer-events-auto">
+            <Link href="/auth/forgot-password" className="text-blue-600 hover:text-blue-800 text-sm font-semibold pointer-events-auto">
               Forgot Password?
             </Link>
           </div>
@@ -256,7 +255,7 @@ const LoginPage = () => {
 
         <p className="mt-6 text-center text-sm text-gray-600">
           Tidak punya akun?{' '}
-          <Link href="/unguided/auth/register" className="text-blue-600 hover:text-blue-800 font-semibold pointer-events-auto">
+          <Link href="/auth/register" className="text-blue-600 hover:text-blue-800 font-semibold pointer-events-auto">
             Daftar
           </Link>
         </p>

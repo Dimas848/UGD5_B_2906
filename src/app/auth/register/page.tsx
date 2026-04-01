@@ -69,7 +69,6 @@ const RegisterPage = () => {
 
     toast.success('Register Berhasil!', { theme: 'dark', position: 'top-right' });
     
-    // Diubah agar kembali ke login utama
     router.push('/auth/login');
   };
 
